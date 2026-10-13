@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
     <title>weather-forecast-api</title>
   </head>
   <body>
@@ -43,60 +44,7 @@
             <div id="unit" class="weather-app-unit">°C</div>
           </div>
         </div>
-        <div class="weather-forecast"></div>
-        <div weather-forcast-day>
-          <div weather-forcast-date>Tue</div>
-          <div weather-forcast-icon>🌤️</div>
-          <div weather-forcast-temperatures>
-            <div class="weather-forcast-temperature">
-              <strong>15°</strong>
-            </div>
-            <div class="weather-forecast-temperature">9°</div>
-          </div>
-        </div>
-        <div class="weather-forecast"></div>
-        <div weather-forcast-day>
-          <div weather-forcast-date>Tue</div>
-          <div weather-forcast-icon>🌤️</div>
-          <div weather-forcast-temperatures>
-            <div class="weather-forcast-temperature">
-              <strong>15°</strong>
-            </div>
-            <div class="weather-forecast-temperature">9°</div>
-          </div>
-        </div>
-        <div class="weather-forecast"></div>
-        <div weather-forcast-day>
-          <div weather-forcast-date>Tue</div>
-          <div weather-forcast-icon>🌤️</div>
-          <div weather-forcast-temperatures>
-            <div class="weather-forcast-temperature">
-              <strong>15°</strong>
-            </div>
-            <div class="weather-forecast-temperature">9°</div>
-          </div>
-        </div>
-        <div class="weather-forecast"></div>
-        <div weather-forcast-day>
-          <div weather-forcast-date>Tue</div>
-          <div weather-forcast-icon>🌤️</div>
-          <div weather-forcast-temperatures>
-            <div class="weather-forcast-temperature">
-              <strong>15°</strong>
-            </div>
-            <div class="weather-forecast-temperature">9°</div>
-          </div>
-        </div>
-        <div class="weather-forecast"></div>
-        <div weather-forcast-day>
-          <div weather-forcast-date>Tue</div>
-          <div weather-forcast-icon>🌤️</div>
-          <div weather-forcast-temperatures>
-            <div class="weather-forcast-temperature">
-              <strong>15°</strong>
-            </div>
-            <div class="weather-forecast-temperature">9°</div>
-          </div>
+        <div class="weather-forecast" id="forecast"></div>
         </div>
       </main>
       <footer>

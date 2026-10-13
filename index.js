@@ -57,7 +57,34 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let forecast = document.querySelector("#forecast");
+
+  let forecast = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+      <div class="weather-forecast-day">
+          <div "weather-forcast-date">${day}</div>
+          <div "weather-forcast-icon">🌤️</div>
+          <div "weather-forcast-temperatures">
+            <div class="weather-forcast-temperature">
+              <strong>15°</strong>
+            </div>
+            <div class="weather-forecast-temperature">9°</div>
+          </div>
+     </div>
+`;
+  });
+
+  forecast.innerHTML = forecastHtml;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Durban");
+displayForecast();
